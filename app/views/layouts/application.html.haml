@@ -22,5 +22,17 @@
       %h3.userName
         ユーザー名
     = yield
-    %h1
-      フッター
+    .footer
+      .links
+        = link_to "https://twitter.com/" do
+          %i.fab.fa-twitter
+            twitter
+        = link_to "https://www.instagram.com/?hl=ja" do
+          %i.fab.fa-instagram
+            Instagram
+        = link_to "https://www.youtube.com" do
+          %i.fab.fa-youtube
+            youtube
+        = link_to "https://www.youtube.com" do
+          %i.fab.fa-line
+            line
