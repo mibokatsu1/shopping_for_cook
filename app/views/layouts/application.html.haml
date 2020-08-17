@@ -10,8 +10,17 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
-    %h1
-      ヘッダー
+    .header
+      %h3
+        Shopping for Cook
+      = link_to "#" do
+        %button{type: "submit", class:'btn btn-success'}
+          Menu一覧
+      = link_to "#" do
+        %button{type: "submit", class:'btn btn-success'}
+          買い物リスト
+      %h3.userName
+        ユーザー名
     = yield
     %h1
       フッター

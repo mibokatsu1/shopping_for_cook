@@ -1,0 +1,10 @@
+// application_html
+.header {
+  display: flex;
+  & a {
+    margin-left: 10px;
+  }
+  .userName {
+    margin-inline-start: auto;
+  }
+}
