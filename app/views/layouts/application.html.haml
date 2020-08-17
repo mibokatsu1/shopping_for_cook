@@ -20,8 +20,8 @@
         = link_to "#" do
           %button{type: "submit", class:'btn btn-success'}
             買い物リスト
-        %h5.userName
-          ユーザー名
+        = link_to edit_user_path(current_user.id), class:"userName" do
+          = current_user.nickname
     = yield
     .container
       .footer
