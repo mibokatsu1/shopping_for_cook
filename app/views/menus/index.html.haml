@@ -1,5 +1,4 @@
-.main
-
+.container.main
   %h3
     料理メニュー　一覧
 
@@ -125,14 +124,48 @@
               変更
             %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
               削除
-
-
-
-  <button type="button" class="btn btn-default">Default</button>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-link">Link</button>
-
+      %tr
+        %td
+          焼きそば
+        %td
+          そば
+        %td
+          3
+        %td
+          玉
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
+      %tr
+        %td
+          焼きそば
+        %td
+          キャベツ
+        %td
+          0.5
+        %td
+          個
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
+      %tr
+        %td
+          焼きそば
+        %td
+          豚バラ肉
+        %td
+          100
+        %td
+          g
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除

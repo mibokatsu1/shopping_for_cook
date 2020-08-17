@@ -1,7 +1,20 @@
 // application_html
+html, body {
+  height:100%;
+  max-width: 100%;
+  font-size : 100%;
+  margin-left : auto;
+  margin-right : auto;
+  text-align : center;
+  background-color : #EFEFEF;
+}
+
 .header {
   display: flex;
   margin-bottom: 30px;
+  padding: 10px;
+  height: 40px;
+  width: 100%;
   & a {
     margin-left: 10px;
   }
@@ -11,25 +24,49 @@
 }
 
 .main {
+  height: calc(100% - 120px);
   overflow: scroll;
-  form {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 15px;
+}
+// .main {
+//   height: calc(100% - 120px);
+//   overflow: scroll;
+//   form {
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-bottom: 15px;
+//   }
+//   .table-responsive {
+//     & th {
+//       background-color: gray;
+//       color: white;
+//     }
+//     & td {
+//       background-color: white;
+//     }
+//   }
+// }
+form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.table-responsive {
+  & th {
+    background-color: gray;
+    color: white;
   }
-  .table-responsive {
-    & th {
-      background-color: gray;
-      color: white;
-    }
+  & td {
+    background-color: white;
   }
 }
 
 
 // footer_html
 .footer {
+  height: 30px;
+  padding: 10px;
   .links {
-    margin-top: 50px;
+    font-size: 20px;
     & a {
       margin-right: 5px;
     }

@@ -10,29 +10,31 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
-    .header
-      %h3
-        Shopping for Cook
-      = link_to "#" do
-        %button{type: "submit", class:'btn btn-success'}
-          Menu一覧
-      = link_to "#" do
-        %button{type: "submit", class:'btn btn-success'}
-          買い物リスト
-      %h5.userName
-        ユーザー名
+    .container
+      .header
+        %h3
+          Shopping for Cook
+        = link_to "#" do
+          %button{type: "submit", class:'btn btn-success'}
+            Menu一覧
+        = link_to "#" do
+          %button{type: "submit", class:'btn btn-success'}
+            買い物リスト
+        %h5.userName
+          ユーザー名
     = yield
-    .footer
-      .links
-        = link_to "https://twitter.com/" do
-          %i.fab.fa-twitter
-            twitter
-        = link_to "https://www.instagram.com/?hl=ja" do
-          %i.fab.fa-instagram
-            Instagram
-        = link_to "https://www.youtube.com" do
-          %i.fab.fa-youtube
-            youtube
-        = link_to "https://line.me/ja/" do
-          %i.fab.fa-line
-            line
+    .container
+      .footer
+        .links
+          = link_to "https://twitter.com/" do
+            %i.fab.fa-twitter
+              twitter
+          = link_to "https://www.instagram.com/?hl=ja" do
+            %i.fab.fa-instagram
+              Instagram
+          = link_to "https://www.youtube.com" do
+            %i.fab.fa-youtube
+              youtube
+          = link_to "https://line.me/ja/" do
+            %i.fab.fa-line
+              line
