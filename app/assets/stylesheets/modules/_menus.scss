@@ -1,10 +1,30 @@
 // application_html
 .header {
   display: flex;
+  margin-bottom: 30px;
   & a {
     margin-left: 10px;
   }
   .userName {
     margin-inline-start: auto;
+  }
+}
+
+body {
+  form {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+}
+
+
+// footer_html
+.footer {
+  .links {
+    margin-top: 50px;
+    & a {
+      margin-right: 5px;
+    }
   }
 }
