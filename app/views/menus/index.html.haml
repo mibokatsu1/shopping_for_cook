@@ -1,12 +1,14 @@
-%h1 料理メニュー　一覧
+.main
 
-%form
-  %button{type: "submit", class:'btn btn-success'}
-    メニューを追加する
+  %h3
+    料理メニュー　一覧
 
-.table-responsive
-  %table.table
-    %thead.thead-dark
+  %form
+    %button{type: "submit", class:'btn btn-success'}
+      メニューを追加する
+
+  .table-responsive
+    %table.table.table-hover
       %tr
         %th
           料理名
@@ -16,85 +18,121 @@
           数量
         %th
           単位
-    %thead.thead-light
+        %th
+          変更
       %tr
-        %th
+        %td
           キーマカレー
-        %th
+        %td
           カレー粉
-        %th
+        %td
           1
-        %th
+        %td
           箱
-    %thead.thead-light
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
       %tr
-        %th
+        %td
           キーマカレー
-        %th
+        %td
           玉ねぎ
-        %th
+        %td
           4
-        %th
+        %td
           個
-    %thead.thead-light
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
       %tr
-        %th
+        %td
           キーマカレー
-        %th
+        %td
           人参
-        %th
+        %td
           2
-        %th
+        %td
           本
-    %thead.thead-light
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
       %tr
-        %th
+        %td
           キーマカレー
-        %th
+        %td
           合い挽き肉
-        %th
+        %td
           300
-        %th
+        %td
           g
-    %thead.thead-light
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
       %tr
-        %th
+        %td
           肉うどん
-        %th
+        %td
           うどん
-        %th
+        %td
           3
-        %th
+        %td
           玉
-    %thead.thead-light
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
       %tr
-        %th
+        %td
           肉うどん
-        %th
+        %td
           牛薄切り肉
-        %th
+        %td
           200
-        %th
+        %td
           g
-    %thead.thead-light
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
       %tr
-        %th
+        %td
           肉うどん
-        %th
+        %td
           青ネギ
-        %th
+        %td
           1
-        %th
+        %td
           束
+        %td
+          = link_to "#" do
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              変更
+            %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+              削除
 
 
 
-
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
 

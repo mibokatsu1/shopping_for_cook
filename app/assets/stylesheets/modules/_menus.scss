@@ -10,11 +10,18 @@
   }
 }
 
-body {
+.main {
+  overflow: scroll;
   form {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 15px;
+  }
+  .table-responsive {
+    & th {
+      background-color: gray;
+      color: white;
+    }
   }
 }
 
