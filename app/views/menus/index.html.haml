@@ -1,8 +1,11 @@
 %h1 料理メニュー　一覧
 
-= form_with "#", method: :post, local: true do |f|
-  = f.text_field :name, placeholder: "料理名"
+%form
+  %input{type: 'text', placeholder: '料理名'}
+  %input{type: 'text', placeholder: '数量'}
+  %input{type: 'text', placeholder: '単位'}
 
+<button type="button" class="btn btn-success">メニューを追加する</button>
 
 .table-responsive
   %table.table
