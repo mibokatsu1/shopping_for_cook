@@ -2,7 +2,7 @@
   %h3
     料理メニュー　一覧
 
-  %form
+  = link_to new_menu_path, class:"link--new", method: :get do
     %button{type: "submit", class:'btn btn-success'}
       メニューを追加する
 

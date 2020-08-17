@@ -26,39 +26,23 @@ html, body {
 .main {
   height: calc(100% - 120px);
   overflow: scroll;
-}
-// .main {
-//   height: calc(100% - 120px);
-//   overflow: scroll;
-//   form {
-//     display: flex;
-//     justify-content: flex-end;
-//     margin-bottom: 15px;
-//   }
-//   .table-responsive {
-//     & th {
-//       background-color: gray;
-//       color: white;
-//     }
-//     & td {
-//       background-color: white;
-//     }
-//   }
-// }
-form {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
-.table-responsive {
-  & th {
-    background-color: gray;
-    color: white;
+  .link--new {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
   }
-  & td {
-    background-color: white;
+  
+  .table-responsive {
+    & th {
+      background-color: gray;
+      color: white;
+    }
+    & td {
+      background-color: white;
+    }
   }
 }
+
 
 
 // footer_html
