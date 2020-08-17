@@ -1,25 +1,91 @@
-%h1 買い物メニュー　一覧
+%h1 料理メニュー　一覧
 
-%table
-  %tr
-    %th
-      カレー
-    %th
-      カレールー
-      %td
-        1箱
-  %tr
-    %th
-    %th
-      玉ねぎ
-      %td
-        3個
-  %tr
-    %th
-    %th
-      人参
-      %td
-        1本
+= form_with "#", method: :post, local: true do |f|
+  = f.text_field :name, placeholder: "料理名"
+
+
+.table-responsive
+  %table.table
+    %thead.thead-dark
+      %tr
+        %th
+          料理名
+        %th
+          食材名
+        %th
+          数量
+        %th
+          単位
+    %thead.thead-light
+      %tr
+        %th
+          キーマカレー
+        %th
+          カレー粉
+        %th
+          1
+        %th
+          箱
+    %thead.thead-light
+      %tr
+        %th
+          キーマカレー
+        %th
+          玉ねぎ
+        %th
+          4
+        %th
+          個
+    %thead.thead-light
+      %tr
+        %th
+          キーマカレー
+        %th
+          人参
+        %th
+          2
+        %th
+          本
+    %thead.thead-light
+      %tr
+        %th
+          キーマカレー
+        %th
+          合い挽き肉
+        %th
+          300
+        %th
+          g
+    %thead.thead-light
+      %tr
+        %th
+          肉うどん
+        %th
+          うどん
+        %th
+          3
+        %th
+          玉
+    %thead.thead-light
+      %tr
+        %th
+          肉うどん
+        %th
+          牛薄切り肉
+        %th
+          200
+        %th
+          g
+    %thead.thead-light
+      %tr
+        %th
+          肉うどん
+        %th
+          青ネギ
+        %th
+          1
+        %th
+          束
 
 
 
