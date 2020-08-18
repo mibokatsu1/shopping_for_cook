@@ -6,7 +6,6 @@ class ItemsController < ApplicationController
 
 private
   def item_params
-    marge(@item)
     params.require(:item).permit(:amount, :menu_id, :ingredient_id)
   end
 
