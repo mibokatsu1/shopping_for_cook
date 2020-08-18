@@ -23,140 +23,140 @@
           %td
             = item.amount
           %td
-            箱
+            = Unit.find_by(ingredient_id: item.ingredient.id).unit
           %td
             = link_to "#" do
               %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
                 変更
               %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
                 削除
-        %tr
-          %td
-            カレー粉
-          %td
-            1
-          %td
-            箱
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            玉ねぎ
-          %td
-            4
-          %td
-            個
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            人参
-          %td
-            2
-          %td
-            本
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            合い挽き肉
-          %td
-            300
-          %td
-            g
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            うどん
-          %td
-            3
-          %td
-            玉
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            牛薄切り肉
-          %td
-            200
-          %td
-            g
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            青ネギ
-          %td
-            1
-          %td
-            束
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            そば
-          %td
-            3
-          %td
-            玉
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            キャベツ
-          %td
-            0.5
-          %td
-            個
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
-        %tr
-          %td
-            豚バラ肉
-          %td
-            100
-          %td
-            g
-          %td
-            = link_to "#" do
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                変更
-              %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
-                削除
+        -# %tr
+        -#   %td
+        -#     カレー粉
+        -#   %td
+        -#     1
+        -#   %td
+        -#     箱
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     玉ねぎ
+        -#   %td
+        -#     4
+        -#   %td
+        -#     個
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     人参
+        -#   %td
+        -#     2
+        -#   %td
+        -#     本
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     合い挽き肉
+        -#   %td
+        -#     300
+        -#   %td
+        -#     g
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     うどん
+        -#   %td
+        -#     3
+        -#   %td
+        -#     玉
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     牛薄切り肉
+        -#   %td
+        -#     200
+        -#   %td
+        -#     g
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     青ネギ
+        -#   %td
+        -#     1
+        -#   %td
+        -#     束
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     そば
+        -#   %td
+        -#     3
+        -#   %td
+        -#     玉
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     キャベツ
+        -#   %td
+        -#     0.5
+        -#   %td
+        -#     個
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除
+        -# %tr
+        -#   %td
+        -#     豚バラ肉
+        -#   %td
+        -#     100
+        -#   %td
+        -#     g
+        -#   %td
+        -#     = link_to "#" do
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         変更
+        -#       %button{type: "submit", class:'btn btn-outline-secondary btn-sm'}
+        -#         削除

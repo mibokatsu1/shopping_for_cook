@@ -6,4 +6,5 @@ class Item < ApplicationRecord
   has_many :menus, through: :manu_items
   has_many :menu_items, dependent: :destroy
   belongs_to :ingredient
+  # has_one :unit, through: :ingredient
 end
