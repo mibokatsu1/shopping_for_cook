@@ -2,6 +2,7 @@ class MenusController < ApplicationController
   def index
     @menus = Menu.all
     # @menu = Menu.find(params[:id])
+    @items = Item.all
   end
 
   def new

@@ -3,6 +3,6 @@ class Menu < ApplicationRecord
   validates :user_id, presence: true
 
   belongs_to :user
+  has_many :menu_items, dependent: :destroy   #中間テーブルをthroughより先に書く
   has_many :items, through: :menu_items
-  has_many :menu_items, dependent: :destroy
 end
