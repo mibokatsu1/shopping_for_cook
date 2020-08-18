@@ -18,7 +18,7 @@
         = link_to menus_path, method: :get do
           %button{type: "submit", class:'btn btn-success'}
             Menu一覧
-        = link_to "#" do
+        = link_to items_path, method: :get do
           %button{type: "submit", class:'btn btn-success'}
             買い物リスト
         - if user_signed_in?

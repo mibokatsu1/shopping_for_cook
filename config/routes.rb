@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root "menus#index"
   resources :users
   resources :menus
+  resources :items
 end
