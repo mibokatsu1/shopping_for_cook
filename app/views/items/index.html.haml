@@ -15,6 +15,9 @@
           変更
       %tr
         %td
+          -# = form_with model: @group, local: true do |f|
+          -#   = f.collection_check_boxes :user_ids, User.all, :id, :name
+        %td
           カレー粉
         %td
           1
