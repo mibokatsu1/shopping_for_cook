@@ -13,10 +13,10 @@
 ActiveRecord::Schema.define(version: 2020_08_18_073131) do
 
   create_table "ingredients", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "ingredient_name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["name"], name: "index_ingredients_on_name", unique: true
+    t.index ["ingredient_name"], name: "index_ingredients_on_ingredient_name", unique: true
   end
 
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -39,11 +39,11 @@ ActiveRecord::Schema.define(version: 2020_08_18_073131) do
   end
 
   create_table "menus", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "menu_name", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["name"], name: "index_menus_on_name", unique: true
+    t.index ["menu_name"], name: "index_menus_on_menu_name", unique: true
     t.index ["user_id"], name: "index_menus_on_user_id"
   end
 
