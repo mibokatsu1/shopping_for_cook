@@ -5,9 +5,19 @@ class ItemsController < ApplicationController
   end
 
   def new
+    @item = Item.new
   end
 
   def create
+    @item = Item.new(item_params)
+
+    if @item.save
+      redirect_to root_path, notice: "編集が完了しました"
+    else
+      binding.pry
+      # flash.now[:alert] = "登録に失敗しました"
+      render :new, alert: "登録に失敗しました"
+    end
   end
 
 private
