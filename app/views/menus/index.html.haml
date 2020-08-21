@@ -22,9 +22,9 @@
       - @items.each do |item|
         %tr
           %td
-            = Menu.find_by(id: item.menu_id).name
+            = Menu.find_by(id: item.menu_id).menu_name
           %td
-            = item.ingredient.name
+            = item.ingredient.ingredient_name
           %td
             = item.amount
           %td
