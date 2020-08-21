@@ -7,5 +7,6 @@ class Item < ApplicationRecord
   has_many :menus, through: :manu_items
   belongs_to :ingredient
   # has_one :unit, through: :ingredient
-  # accepts_nested_attributes_for :menus, allow_destroy: true
+  # accepts_nested_attributes_for :menus, through: :manu_items
+  accepts_nested_attributes_for :ingredient, allow_destroy: true
 end

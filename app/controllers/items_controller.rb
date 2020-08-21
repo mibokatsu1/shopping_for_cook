@@ -1,4 +1,6 @@
 class ItemsController < ApplicationController
+  before_action :set_user
+
   def index
     @items = Item.all
     # @item = Item.find(params[:id])
@@ -6,15 +8,18 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
+    # @item.menus.build
+    
   end
 
   def create
     @item = Item.new(item_params)
-
+    # @item.ingredient.build
+    binding.pry
     if @item.save
       redirect_to root_path, notice: "編集が完了しました"
     else
-      binding.pry
+      # binding.pry
       # flash.now[:alert] = "登録に失敗しました"
       render :new, alert: "登録に失敗しました"
     end
@@ -26,7 +31,15 @@ private
   end
 
   # def item_params
-  #   params.require(:item).permit(:amount, :menu_id, :ingredient_id, menus_attributes: [:name, :id, :user_id])
+    # params.require(:item).permit(:amount, :menu_id, :ingredient_id, menus_attributes: [:menu_name, :id, :user_id], ingredient_attributes: [:id, :ingredient_name])
+    # params.require(:item).permit(
+    #   :amount,
+    #   :menu_id,
+    #   :ingredient_id,
+    #   ingredient_attributes: [:id,
+    #                           :ingredient_name]
+    #   )
+         #.merge(user_id: current_user.id)
   # end
 
   def set_user
