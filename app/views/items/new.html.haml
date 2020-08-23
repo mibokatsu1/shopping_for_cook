@@ -2,17 +2,19 @@
   %h3 メニュー追加ページ
 
   = form_with model: @item, local: true do |f|
-    -# = f.text_field :menu_name, placeholder: '料理名'
+    = f.fields_for :menus, @item.menus do |ff|
+      = ff.text_field :menu_name, placeholder: '料理名'
     .br
-    -# = f.text_field :ingredient_name, placeholder: '食材名'
+    = f.fields_for :ingredient, @item.ingredient do |fff|
+      = fff.text_field :ingredient_name, placeholder: '食材名'
     = f.text_field :amount, placeholder: '数量'
-    = f.text_field :menu_id, placeholder: 'menu_id'
-    = f.text_field :ingredient_id, placeholder: 'ingredient_id'
-    = f.text_field :ingredient_name, placeholder: 'ingredient_name'
     .br
     %button{type: "submit", class:'btn btn-success'}
       追加
 
+  -# = f.fields_for :ingredient, @item.build_ingredient do |ff|
+  -# = f.text_field :menu_id, placeholder: 'menu_id'
+  -# = f.text_field :ingredient_id, placeholder: 'ingredient_id'
 
   -# %form
   -#   %input{type: 'text', placeholder: '料理名'}
